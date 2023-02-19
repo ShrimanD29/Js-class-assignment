@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<style>
+    img{
+        padding-left: 490px;
+    }
+    #si{
+        text-align: center;
+        font-weight: bolder;
+    }
+
+</style>
+</head>
+<body background="bg.jpg">
+<div><img id="cat" src="close.png"></div>
+<div id="si"><h1>Camera wowo</h1></div>
+<script>
+    document.getElementById("cat").addEventListener("mouseover",mouseOver);
+    document.getElementById("cat").addEventListener("mouseout",mouseOut);
+    function mouseOver(){
+        document.getElementById("cat").src="open.png";
+        document.getElementById("si").innerHTML='<h1>Siiiiuuuuuuuuuuuuu</h1>'
+    }
+    function mouseOut(){
+        document.getElementById("si").innerHTML="<h1>Camera wowo</h1>"
+        document.getElementById("cat").src="close.png"
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+
+<style>
+#circle {
+    margin-left: 650px;
+    margin-top: 300px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: blue;
+    transition: all 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div id="circle"></div>
+
+<script>
+document.getElementById("circle").addEventListener("mouseover",enlarge);
+document.getElementById("circle").addEventListener("mouseout",shrink);
+function enlarge() {
+    document.getElementById("circle").style.width = "300px";
+    document.getElementById("circle").style.height = "300px";
+    document.getElementById("circle").style.backgroundColor="red";
+}
+
+function shrink() {
+    document.getElementById("circle").style.width = "200px";
+    document.getElementById("circle").style.height = "200px";
+    document.getElementById("circle").style.backgroundColor="green";
+}
+</script>
+</body>
+</html>
